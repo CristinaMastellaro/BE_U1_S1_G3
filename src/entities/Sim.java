@@ -7,12 +7,13 @@ public class Sim {
     // Attributi
     private long numTel;
     private double creditoDisponibile;
-    private Chiamata[] ultimeCinqueChiamate = {};
+    private Chiamata[] ultimeCinqueChiamate;
 
     // Costruttore
     public Sim(long numTel) {
         this.numTel = numTel;
         creditoDisponibile = 0;
+        ultimeCinqueChiamate = new Chiamata[5];
     }
 
     // Metodi
